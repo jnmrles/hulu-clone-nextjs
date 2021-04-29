@@ -1,20 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
+import Nav from "../components/Nav";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Hulu Next.js Clone</title>
-        <meta
-          name="description"
-          content="An educational Hulu clone developed with Next.js"
-        />
+        <title>Hulu</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
+      <Nav />
+
       {/*
 
 
