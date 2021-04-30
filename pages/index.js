@@ -1,11 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Results from "../components/Results";
 import requests from "../utils/requests";
 
 export default function Home({ results }) {
+  console.log(results);
+
   return (
     <div>
       <Head>
@@ -16,22 +17,10 @@ export default function Home({ results }) {
       <Header />
       <Nav />
       <Results results={results} />
-
-      {/*
-
-
-
-
-      Header Componnent
-      Nav Bar
-      Results component
-
-
-      */}
     </div>
   );
 }
-//
+
 export async function getServerSideProps(context) {
   const genre = context.query.genre;
 
