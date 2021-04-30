@@ -7,7 +7,8 @@ import {
   UserIcon,
 } from "@heroicons/react/outline";
 import Image from "next/image";
-import HeaderItem from "./HeaderItem.js";
+import HeaderItem from "../components/HeaderItem";
+
 function Header() {
   return (
     <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
