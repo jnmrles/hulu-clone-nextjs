@@ -1,4 +1,4 @@
-import Thumbnail from "./Thumbnail";
+import Thumbnail from "./ThumbNail";
 import FlipMove from "react-flip-move";
 
 function Results({ results }) {
